@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, .sub {
+    font-family: 'Indie Flower', cursive;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.sub {
+    font-size: 30px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(148, 147, 147);
+}
+
+footer {
+    display: flex;
+    gap: 5px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+.left, .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin-top: 30px;
+    border: 1px solid black;
+    background-color: rgb(122, 93, 80);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 6px rgba(0,0,0,1);
+}
+
+.calculator, .screen {
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.calculator {
+    background-color: lightgray;
+    box-shadow: 6px 6px 6px rgba(0,0,0,1);
+}
+
+.screen {
+    background-color: white;
+}
+
+.currentOperation {
+    padding-bottom: 6px;
+    padding-right: 15px;
+    font-size: 45px;
+}
+
+.wholeOperation {
+    padding-right: 15px;
+}
+
+.mid {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.calculator {
+    min-height: 60vh;
+    width: 50vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    min-height: 15vh;
+    margin-bottom: 5px;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.currentOperation {
+    min-height: 7.5vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.wholeOperation {
+    min-height: 7.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.upperButtons {
+    display: flex;
+    padding: 5px 0 5px 0;
+    gap: 10px;
+    height: 9vh;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+.clearButton, .deleteButton, .changeSign, .powerOf2 {
+    width: 25%;
+}
+
+.allButtons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    height: 36vh;
+}
+
+button {
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 1rem;
+    border: none;
+    transition: transform 0.1s ease;
+}
+
+.clearButton {
+    background-color: rgb(202, 43, 43);
+}
+
+.deleteButton {
+    background-color: rgb(122, 93, 80);
+}
+
+.clearButton:hover, .deleteButton:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.btnOperator, .changeSign, .powerOf2 {
+    background-color: rgb(172, 156, 149);
+}
+
