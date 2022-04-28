@@ -60,7 +60,7 @@ function changeSign(){
 
 function deleteChar(){
     currentOperation.textContent = currentOperation.textContent.toString().slice(0, -1)
-    if (currentOperation.textContent.toString().length === 0) currentOperation.textContent = ''
+    if (currentOperation.textContent.toString().length === 0) currentOperation.textContent = '0'
     if (currentOperation.textContent.toString().length === 1 && currentOperation.textContent === '-') currentOperation.textContent = ''
 }
 
